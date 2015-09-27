@@ -7,4 +7,8 @@ The official site for Mr. Doc
 
 ## Contributions
 
-Fork the project, run the project with `harp server _site`, contribute, and then pull.
+1. Fork the project
+2. Run the project with `harp server _site`
+3. Contribute
+4. Compile with `harp compile _site ./`
+5. Create a pull request
