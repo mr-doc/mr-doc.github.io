@@ -1,0 +1,47 @@
+.main-header
+	nav.navbar
+		a.navbar-title(href='/') Mr. Doc
+		.navbar-links
+			a.navbar-link(href='https://mr-doc.github.io/mr-doc/') Docs
+			a.navbar-link(href='/themes') Themes
+			a.navbar-link(href='https://github.com/mr-doc/mr-doc') GitHub
+	.main-header-content
+		h1.logo Mr. Doc
+		h3.tagline A personal source documenter at your service
+		button.main-header-btn Try it now
+.main-info
+	.main-info-content
+		.benefits
+			.benefit
+				h1.benefit-title Easy to use
+				p.benefit-text 
+					| Simply install Mr. Doc, write your documentations with JSDoc style or CoffeeScript JavaDoc syle and generate.
+				pre
+					code.language-bash.
+						$ # 1. Install Mr. Doc
+						$ sudo npm install -g mr-doc
+						$ # 2. Let Mr. Doc generate your docs
+						$ mr-doc -s lib/ -o docs/ -n "My Project"
+
+			.benefit
+				h1.benefit-title Themeable
+				p.benefit-text
+					| Since the introduction of themes in v2.1.0, Mr. Doc will easily spice up your documents.
+				pre
+					code.language-bash.
+						$ # 1. Install a Mr. Doc theme
+						$ npm install --save-dev mr-doc-theme-cayman
+						$ # 2. Let Mr. Doc generate your docs with the new theme
+						$ mr-doc -s lib/ -o docs/ -n "My Project" -t "cayman"
+
+			.benefit
+				h1.benefit-title JSFiddle Support
+				p.benefit-text
+					| By having support for JSFiddle, you can show your example code with just a @jsfiddle tag in your comments.
+			.benefit
+				h1.benefit-title Easy to Learn API
+				p.benefit-text
+					| Using the power of ESNext, it easy to learn how each class works in generating beautifiul documentations. 
+footer.credit 
+	| This site was inspired by <a href="http://gulpjs.com">gulp.js</a> 
+	| and generated with <a href="http://harpjs.com/">harp.js</a>

@@ -1,0 +1,18 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Mr. Doc</title><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"><link rel="shortcut icon" href="favicon.ico" type="image/x-icon"><link rel="icon" href="favicon.ico" type="image/x-icon"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/prism.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Parisienne"><!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
+<![endif]--></head><body><div class="main-header"><nav class="navbar"><a href="/" class="navbar-title">Mr. Doc</a><div class="navbar-links"><a href="https://mr-doc.github.io/mr-doc/" class="navbar-link">Docs</a><a href="/themes" class="navbar-link">Themes</a><a href="https://github.com/mr-doc/mr-doc" class="navbar-link">GitHub</a></div></nav><div class="main-header-content"><h1 class="logo">Mr. Doc</h1><h3 class="tagline">A personal source documenter at your service</h3><button class="main-header-btn">Try it now</button></div></div><div class="main-info"><div class="main-info-content"><div class="benefits"><div class="benefit"><h1 class="benefit-title">Easy to use</h1><p class="benefit-text"> 
+Simply install Mr. Doc, write your documentations with JSDoc style or CoffeeScript JavaDoc syle and generate.</p><pre><code class="language-bash">$ # 1. Install Mr. Doc
+$ sudo npm install -g mr-doc
+$ # 2. Let Mr. Doc generate your docs
+$ mr-doc -s lib/ -o docs/ -n "My Project"
+</code></pre></div><div class="benefit"><h1 class="benefit-title">Themeable</h1><p class="benefit-text">Since the introduction of themes in v2.1.0, Mr. Doc will easily spice up your documents.</p><pre><code class="language-bash">$ # 1. Install a Mr. Doc theme
+$ npm install --save-dev mr-doc-theme-cayman
+$ # 2. Let Mr. Doc generate your docs with the new theme
+$ mr-doc -s lib/ -o docs/ -n "My Project" -t "cayman"
+</code></pre></div><div class="benefit"><h1 class="benefit-title">JSFiddle Support</h1><p class="benefit-text">By having support for JSFiddle, you can show your example code with just a @jsfiddle tag in your comments.</p></div><div class="benefit"><h1 class="benefit-title">Easy to Learn API</h1><p class="benefit-text">Using the power of ESNext, it easy to learn how each class works in generating beautifiul documentations. </p></div></div></div></div><footer class="credit"> 
+This site was inspired by <a href="http://gulpjs.com">gulp.js</a> 
+and generated with <a href="http://harpjs.com/">harp.js</a></footer><script type="text/javascript" src="/js/prism.js"></script><script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script><script>$(document).ready(function(){
+   $('.main-header-btn').click(function(e){
+     $(window).scrollTo('.benefits', 500);
+   });
+});</script></body></html>

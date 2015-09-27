@@ -1,0 +1,12 @@
+nav.fixed-title(role='navigation')
+      a.logo(href='/', role='banner') Mr. Doc
+      input.ng-cloak.good-font.theme-search(ng-change='limit=15', type='search', role='search', placeholder='Search {{ (data | filter:notBlacklisted).length }} themes...', ng-model='search', autofocus='')
+    section.ng-cloak.theme-list-container(ng-init='limit=20', infinite-scroll='limit=limit+25', role='main')
+      ul.theme-list(ng-show='data', role='list')
+        li.no-results(ng-hide='(data | filter:search | filter:notBlacklisted).length') No results found
+        li.theme(role='listitem', ng-repeat='theme in data | filter:search | filter:notBlacklisted | limitTo:limit track by $index')
+          a.title(ng-href='https://npmjs.org/package/{{theme.name}}/', target='_blank', title='Install', ng-bind='theme.name')
+          .description(ng-bind='theme.description')
+          .more-info
+            .tags
+              a(ng-repeat='keyword in theme.keywords | orderBy:orderByGulpKeywords track by $index', ng-href='http://npmsearch.com/?q=keywords:{{keyword}}', target='_blank', ng-bind='keyword')

@@ -1,0 +1,9 @@
+{
+	"globals":{
+		"title": "Mr. Doc",
+		"url":{
+			"github":"https:/www.github.com/mr-doc",
+			"npm":"https://www.npmjs.com/package/mr-doc"
+		}
+	}
+}

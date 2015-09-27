@@ -1,0 +1,15 @@
+doctype html
+html(ng-app='npm-theme-browser')
+  head
+    title #{ title }   
+    meta(name='description', content='Discover Mr. Doc themes')
+    meta(name='keywords', content='mr-doc,themes,document,javascript,search,source, "Mr. Doc"')
+    meta(name='viewport', content='width=device-width, initial-scale=1, minimal-ui')
+    link(rel='stylesheet', href='/css/app.css')
+    link(rel="stylesheet", href="/css/prism.css")
+    link(href='https://fonts.googleapis.com/css?family=Parisienne', rel='stylesheet')
+    body.good-font(ng-controller='ThemeListCtrl')
+      != yield
+      script(type="text/javascript", src="/js/vendor.js")
+      script(type="text/javascript", src="/js/app.js")
+      script(type="text/javascript", src="/js/prism.js")
