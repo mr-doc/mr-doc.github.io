@@ -1,4 +1,4 @@
-# mr-doc.gihtub.io
+# mr-doc.github.io
 The official site for Mr. Doc
 
 ## Requirements
