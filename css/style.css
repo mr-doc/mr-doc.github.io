@@ -321,12 +321,14 @@ body {
 }
 .benefits .benefit {
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 .credit {
   display: table;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 50px;
   font-family: Helvetica, sans-serif
 }
 .credit a {
